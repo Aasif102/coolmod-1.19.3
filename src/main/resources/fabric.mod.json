@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "coolmod",
+	"version": "${version}",
+	"name": "CoolMod",
+	"description": "Very Cool Mod LIKE GRRAAA",
+	"authors": [
+		"Aasif10"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/coolmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aasif10.CoolMod"
+		],
+		"client": [
+			"net.aasif10.CoolModClient"
+		],
+		"fabric-datagen": [
+			"net.aasif10.CoolModDataGenerator"
+		]
+	},
+	"mixins": [
+		"coolmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
